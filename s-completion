@@ -1,0 +1,8 @@
+#!/bin/bash
+
+_s_completions() {
+  session_names=$(find "$TMUX_SESSIONS_PATH/" -name '*.conf' -execdir basename -s .conf {} \+)
+  COMPREPLY+=("$session_names")
+}
+
+complete -F _s_completions s
