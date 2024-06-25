@@ -34,7 +34,7 @@ export TMUX_SESSIONS_PATH=</absolute/path/to/configs>
 
 The session configs are standard tmux configuration files&mdash;see the tmux command ``source-file``.
 
-If you used the repository's default ``config/`` path, you will find ``sessions.config`` which defines a session to edit all the available config files in vim.
+If you used the repository's default ``config/`` path, you will find ``sessions.conf`` which defines a session to edit all the available config files in vim.
 
 ## Usage
 
