@@ -18,6 +18,6 @@ if [ ! -f "$session_source_file" ]; then
   exit 1
 fi
 
-if ! tmux attach-session -d -t "$session" &>/dev/null; then
+if ! tmux attach-session -d -t "=$session" &>/dev/null; then
   tmux new -s "$session" \; source-file -q "$session_source_file"
 fi
